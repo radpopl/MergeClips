@@ -14,4 +14,4 @@
 # - the format of all clips must be the same except for width and height
 # - I suggest converting to YUV444 or RGB before calling the function, and converting the final clip back to the target format (for better resize quality)
 #
-# (v1.0)
+# (v1.01)
