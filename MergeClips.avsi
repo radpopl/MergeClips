@@ -46,7 +46,7 @@ function MergeClipsV(clip_array Clips, string "resize") {
 	pat = Clips[maxSARindex].ExpandToClipV(Clips[maxVindex], resize)
 	out = Clips[0].ExpandToClipV(pat)
 	for(i=1, ArraySize(Clips)-1) {
-		out = out ++ (i==maxSARindex ? pat : Clip[i].ExpandToClipV(pat))
+		out = out ++ (i==maxSARindex ? pat : Clips[i].ExpandToClipV(pat))
 	}
 	return out
 }
